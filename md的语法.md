@@ -80,9 +80,75 @@
 	| ---- | ---- | ---- |
 	|      | 38   | 33   |
 
-	
+	## markdown的实现原理
 
 	
 
+	Markdown 的实现原理主要涉及到解析（Parsing）和转换（Rendering）两个步骤，通过将 Markdown 语法解析成特定的抽象结构，然后转换为目标格式。以下是 Markdown 实现的几个关键步骤和原理：
+	
+	1. **词法分析**exical Analysis）
+	
+	在解析 Markdown 文本时，Markdown 解析器会首先进行词法分析，将文本内容拆分成更小的语法单元，称为“标记”（Token）。这些标记代表了 Markdown 语法的基本成分，如标题、列表、段落、代码块等。
+	
+	例如，在 Markdown 文本中：
+	
+	### Heading
+	
+	- List item
+	
+	在词法分析阶段，会识别出 # 作为标题的符号、- 作为列表项的符号。
+	
+	2. 语法分析（Parsing）
+	
+	在词法分析之后，Markdown 解析器会将标记转化为更复杂的数据结构，通常是一个“抽象语法树”（AST，Abstract Syntax Tree）。这棵树可以更清晰地描述 Markdown 文本的层次结构和嵌套关系。
+	
+	在 AST 中，每个节点代表 Markdown 的一个语法元素，根节点代表整个文档，子节点可以是段落、标题、列表项等。比如上面的例子，会生成一个树形结构，其中 Heading 是一个标题节点，List item 是列表项节点。
+	
+	3. 语义解析（Semantic Parsing）
+	
+	在部分 Markdown 实现中，还会进行简单的语义解析，确定如何渲染不同类型的文本。例如，强调（如 *italic*、**bold**）和链接等需要进一步分析，以确保在生成 HTML 或其他格式时能正确表达样式。
+	
+	4. 渲染（Rendering）
+	
+	最后一步是将 AST 转换为目标格式，例如 HTML、PDF、或其他格式。Markdown 解析器通过遍历 AST 的每个节点，将每个节点转换成目标格式的元素。以下是几个例子：
+	
+		•	标题：在 HTML 中，# Heading 会转化为 <h1>Heading</h1>。
+		•	列表：- List item 会转化为 HTML 中的无序列表项 <ul><li>List item</li></ul>。
+		•	链接：[OpenAI](https://openai.com) 会转化为 OpenAI。
+	
+	每种 Markdown 解析器的渲染过程可能不同，基于需求会生成不同的 HTML 标签或特定样式。
+	
+	5. 扩展语法（Extensions）
+	
+	不同的 Markdown 实现可以增加扩展语法，例如表格、任务列表、注脚等。这些扩展需要定义额外的解析和渲染逻辑。
+	
+	Markdown 的核心组件
+	
+	Markdown 实现的核心是：
+	
+		•	标记器（Tokenizer）：用于识别 Markdown 中的不同语法元素。
+		•	解析器（Parser）：将标记解析成语法树结构。
+		•	渲染器（Renderer）：将语法树转化为目标格式。
+	
+	总的来说，Markdown 的实现是基于对文本的分层解析，将简单的标记语言解析为更复杂的文档结构，再通过渲染器转化为不同的格式，从而让 Markdown 既保持简单的语法，又能生成具有层次和样式的文档。
+	
+	## typora的一些功能
+	
+	1. 可以用快捷键来进行快速的操作
+	
+	2. :happy:  可以插入表情符号嘿嘿
+	
+	3. typora还可以进行数学公式的输入
+	
+	4. 可以构建一个流程图
+	
+	5. ~~~mermaid
+		graph LR
+		A -->B
+		
+		~~~
+	
+	
+	
 	
 
