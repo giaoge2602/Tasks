@@ -10,17 +10,17 @@
 
 	## git checkout 后面跟不小心删除的文件
 
-	根据第一种情况<img src="../../AppData/Roaming/Typora/typora-user-images/image-20241107213120230.png" alt="image-20241107213120230" style="zoom: 67%;" />
+	根据第一种情况![](https://github.com/giaoge2602/picture/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241108231311.png?raw=true)
 
 	可以使用git checkout加上文件名来进行恢复
 
 	## 已经有add但是没有commit的操作
 
-	<img src="../../AppData/Roaming/Typora/typora-user-images/image-20241108170518254.png" alt="image-20241108170518254" style="zoom:67%;" />
+	这里本来是想有图片显示的。但是忘记记录了，实在很抱歉，具体的操作就是用git log查看日志，找到相应的哈希值，再用checkout来实现。
 
 	**就可以先查出日志，再用哈希值来还原** 
 
-	![image-20241108170718903](../../AppData/Roaming/Typora/typora-user-images/image-20241108170718903.png)
+	![image-20241108170718903](https://github.com/giaoge2602/picture/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241108231234.jpg?raw=true)
 
 	我们add只是把它从工作区放到了暂存区，checkout只是从暂存区恢复到工作区，添加了add，就把工作区和暂存区的内容变得一样了，所以我们得从版本库里面恢复我们的文件。
 
@@ -44,11 +44,11 @@
 	
 	
 	
-	![image-20241108143303842](D:/git 图片/微信图片_20241108231917.png)
+	![image-20241108143303842](https://github.com/giaoge2602/picture/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241108231917.png?raw=true)
 	
 	### 遇到的一点小问题
 	
-	![image-20241108150752457](D:/git 图片/微信图片_20241108232007.png)
+	![image-20241108150752457](https://github.com/giaoge2602/picture/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241108232007.png?raw=true)
 	
 	​     
 	
@@ -58,7 +58,7 @@
 	
 	### 如何创建远程分支和本地连接的理解
 	
-	![image-20241108160038137](D:/git 图片/微信图片_20241108231247.png)
+	![image-20241108160038137](https://github.com/giaoge2602/picture/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241108231247.png?raw=true)
 	
 	**git push origin（远程仓库的名称） master（本地仓库的名称）:main（你想推送到的远程仓库的分支或者是主文件）**
 	
