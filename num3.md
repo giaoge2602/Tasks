@@ -1,3 +1,3 @@
 dangaxinddggeeddd
 
-![](D:\git 图片\微信图片_20241109025312.png)
+![](https://raw.githubusercontent.com/giaoge2602/images/main/202411090304137.png?token=BDSPFR6SNP2THKYITOSZLDDHFZQP2)
