@@ -44,11 +44,11 @@
 	
 	
 	
-	![image-20241108143303842](../../AppData/Roaming/Typora/typora-user-images/image-20241108143303842.png)
+	![image-20241108143303842](D:/git 图片/微信图片_20241108231917.png)
 	
 	### 遇到的一点小问题
 	
-	![image-20241108150752457](../../AppData/Roaming/Typora/typora-user-images/image-20241108150752457.png)
+	![image-20241108150752457](D:/git 图片/微信图片_20241108232007.png)
 	
 	​     
 	
@@ -58,7 +58,7 @@
 	
 	### 如何创建远程分支和本地连接的理解
 	
-	![image-20241108160038137](../../AppData/Roaming/Typora/typora-user-images/image-20241108160038137.png)
+	![image-20241108160038137](D:/git 图片/微信图片_20241108231247.png)
 	
 	**git push origin（远程仓库的名称） master（本地仓库的名称）:main（你想推送到的远程仓库的分支或者是主文件）**
 	
