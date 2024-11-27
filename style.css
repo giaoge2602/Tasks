@@ -67,7 +67,7 @@
     transform: translateX(-50%);
     width: 300px;
     height: 400px; 
-    background-image: url(./images/qrcode_1699620268564.jpg); 
+    background-image: url(https://raw.githubusercontent.com/giaoge2602/images/main/202411271051674.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
     opacity: 0; 
@@ -114,14 +114,14 @@
 }
 
  .tupian1 {
-    background-image: url(./images/background_Homepage.png);
+    background-image: url(https://raw.githubusercontent.com/giaoge2602/images/main/202411271051358.png);
     width: 100%;
     height: 1100px;
     margin-top: 1px;
     background-size: cover;
  }
  .tupian2 {
-      background-image: url(./images/decoration_Transition.png);
+      background-image: url(https://raw.githubusercontent.com/giaoge2602/images/main/202411271051319.png);
       width: 100%;
       height: 300px;
       background-repeat: no-repeat;
@@ -295,11 +295,11 @@
     left: 1100px;
     top: 840px;
     transform: scale(1.5);
-    transition: transform 1.5s ease; /* 添加过渡效果 */
+    transition: transform 1.5s ease; 
 
 }
 .butterfly:hover {
-    transform: scale(1.55) translateY(-30px); /* 放大并向上移动 */
+    transform: scale(1.55) translateY(-30px); 
 }
 
 
@@ -404,7 +404,7 @@
     border-radius: 30px;
     border: 14px solid #5396ff;
     margin: 20px auto;
-    background-image: url(./images/background_QA.png);
+    background-image: url(https://raw.githubusercontent.com/giaoge2602/images/main/202411271110939.png);
     background-position: 0px 9px;
 }
 .box7 p {
@@ -422,7 +422,7 @@
 }
 .question2 {
     padding: 15px 20px;
-    background-color: #8dc6ff; /* 每个问题的背景色 */
+    background-color: #8dc6ff; 
     color: black;
     cursor: pointer;
     display: flex;
